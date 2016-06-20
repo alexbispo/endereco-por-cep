@@ -37,4 +37,4 @@ Execute os seguintes comandos:
 Isso irá fazer o deploy da aplicação usando o Jetty web server. Feito o deploy,
 busque um endereço por cep, como no exemplo abaixo: 
 
--   <http://localhost:8080/enderecos/12345678>
+-   <http://localhost:8080/endereco-por-cep/enderecos/12345678>
