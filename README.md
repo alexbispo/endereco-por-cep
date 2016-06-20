@@ -1,15 +1,21 @@
 endereco-por-cep
 ==========================================================
 
-Web service para busca de endereço por CEP, dado um CEP válido, retorna o endereço conrrespondente.
+Web service para busca de endereço por CEP, dado um CEP válido, retorna o endereço correspondente.
 
 ## Requerimentos
 
  - [Java Development Kit(JDK)](http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html) >= 1.7
  - [Apache Maven](https://maven.apache.org/) 3.3.9
 
+## Comportamento
 
-Conteúdo
+ - Dado um CEP válido, retorna o endereço correspondente
+ - Dado um CEP válido, que não exista o endereço, substitui um digito da direita para a esquerda por zero até que o endereço seja localizado
+   (Exemplo: Dado 22333999 tenta com 22333990 22333900 ...)
+ - Dado um CEP inválido, retorna mensagem: "CEP inválido"
+
+Rotas
 --------
 
 Abaixo, o mapeamento das rotas do serviço:
