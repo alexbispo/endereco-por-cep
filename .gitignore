@@ -1,0 +1,12 @@
+# maven noise
+target/
+
+# Eclipse noise
+.settings
+.settings/*
+.project
+.classpath
+
+# Maven plugins noise
+dependency-reduced-pom.xml
+pom.xml.versionsBackup
